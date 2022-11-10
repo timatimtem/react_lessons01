@@ -1,6 +1,6 @@
 
 import React from 'react';
-
+import Post from "./Post/Post";
 
 const Profile = () => {
 	return (
@@ -36,6 +36,21 @@ const Profile = () => {
 					<button>Send</button>
 				</form>
 			</div>
+
+			<Post likes="50"
+				content="first post"
+				date="11.11.2022"
+				avatar='https://ichef.bbci.co.uk/news/976/cpsprodpb/17638/production/_124800859_gettyimages-817514614.jpg'
+				username='tymur'
+
+			/>
+			<Post likes="1420"
+				content="Post about my interesting life! Read it now"
+				date="1.11.2022"
+				avatar='https://ichef.bbci.co.uk/news/976/cpsprodpb/17638/production/_124800859_gettyimages-817514614.jpg'
+				username='tymur'
+
+			/>
 		</div>
 	)
 }

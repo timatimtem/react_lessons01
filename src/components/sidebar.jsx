@@ -1,17 +1,64 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Sidebar = () => {
 
-	return <nav className='sidebar'>
+	let activeStyle = {
+		textDecoration: 'underline',
+	}
 
 
-		<a href="#" className="sidebar__link">Profile</a>
-		<a href="#" className="sidebar__link">Messages</a>
-		<a href="#" className="sidebar__link">News</a>
-		<a href="#" className="sidebar__link">Music</a>
-		<a href="#" className="sidebar__link">Settings</a>
-	</nav>
+	return (
+		<nav className='sidebar'>
 
+
+			<NavLink
+				to="profile"
+				className="sidebar__link"
+				style={({ isActive }) =>
+					isActive ? activeStyle : undefined
+				}
+			>
+				Profile
+			</NavLink>
+			<NavLink
+				to="dialogs"
+				className="sidebar__link"
+				style={({ isActive }) =>
+					isActive ? activeStyle : undefined
+				}
+			>
+				Messages
+			</NavLink>
+			<NavLink
+				to="news"
+				className="sidebar__link"
+				style={({ isActive }) =>
+					isActive ? activeStyle : undefined
+				}
+			>
+				News
+			</NavLink>
+			<NavLink
+				to="music"
+				className="sidebar__link"
+				style={({ isActive }) =>
+					isActive ? activeStyle : undefined
+				}
+			>
+				Music
+			</NavLink>
+			<NavLink
+				to="settings"
+				className="sidebar__link"
+				style={({ isActive }) =>
+					isActive ? activeStyle : undefined
+				}
+			>
+				Settings
+			</NavLink>
+		</nav>
+	)
 }
 
 
