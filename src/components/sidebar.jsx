@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 const Sidebar = () => {
 
 	let activeStyle = {
-		textDecoration: 'underline',
+		'textDecoration': 'underline',
 	}
 
 

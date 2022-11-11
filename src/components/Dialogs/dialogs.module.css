@@ -1,0 +1,21 @@
+.dialogs {
+	display: grid;
+	color: red;
+	grid-template-columns: 2fr 10fr;
+}
+
+
+.dialog a {
+	display: block;
+	text-decoration: none;
+	padding: 10px 0;
+	color: firebrick;
+}
+
+.active a {
+	text-decoration: underline;
+}
+
+.messageItem {
+	font-size: 20px;
+}

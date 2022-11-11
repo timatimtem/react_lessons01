@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Dialog from './components/Dialogs/Dialog';
+import Dialog from './components/Dialogs/Dialogs';
 import Header from './components/Header/header'
 import Profile from './components/Profile/profile';
 import Sidebar from './components/sidebar';
