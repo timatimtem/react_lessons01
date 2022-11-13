@@ -13,7 +13,7 @@ const Sidebar = () => {
 
 
 			<NavLink
-				to="profile"
+				to="/"
 				className="sidebar__link"
 				style={({ isActive }) =>
 					isActive ? activeStyle : undefined

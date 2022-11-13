@@ -2,7 +2,7 @@
 import React from 'react';
 import Post from "./Post/Post";
 
-const Profile = () => {
+const Profile = (props) => {
 	return (
 		<div className='content'>
 			<div className="content__wallpaper">
@@ -14,7 +14,7 @@ const Profile = () => {
 					<img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/17638/production/_124800859_gettyimages-817514614.jpg" alt="" />
 				</div>
 				<div className="profile__info">
-					<h2 className="profile__username">Tymur T.</h2>
+					<h2 className="profile__username">{props[0].name} </h2>
 
 					<ul className="profile__info-list">
 
@@ -38,17 +38,17 @@ const Profile = () => {
 			</div>
 
 			<Post likes="50"
-				content="first post"
+				content={props[0].posts[0]}
 				date="11.11.2022"
 				avatar='https://ichef.bbci.co.uk/news/976/cpsprodpb/17638/production/_124800859_gettyimages-817514614.jpg'
-				username='tymur'
+				username={props[0].name}
 
 			/>
 			<Post likes="1420"
-				content="Post about my interesting life! Read it now"
+				content={props[0].posts[1]}
 				date="1.11.2022"
 				avatar='https://ichef.bbci.co.uk/news/976/cpsprodpb/17638/production/_124800859_gettyimages-817514614.jpg'
-				username='tymur'
+				username={props[0].name}
 
 			/>
 		</div>

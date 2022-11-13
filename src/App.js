@@ -11,6 +11,17 @@ import Music from 'components/Music/Music';
 import Settings from 'components/Settings/Settings';
 
 function App() {
+
+	let dataJson = [
+		{
+			id: 1, name: 'tem',
+			posts: {
+				0: "Hi My anme is tem ? this is my first post!",
+				1: "Ready to learn react props..."
+			}
+		}
+	]
+
 	return (
 		<BrowserRouter>
 			<div className="app-wrapper">
@@ -18,8 +29,7 @@ function App() {
 				<Sidebar />
 				<div className="app-wrapper-content">
 					<Routes>
-						<Route path='profile' element={<Profile />} />
-
+						<Route path='/' element={<Profile {...dataJson} />} />
 						<Route path='dialogs' element={<Dialog />} />
 
 						<Route path='news' element={<News />} />
